@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.0001", "Projec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.0001.Tests", "ProjectEuler.0001.Tests\ProjectEuler.0001.Tests.csproj", "{22DB4224-4836-480F-ADAE-6697B7F85D87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.0002", "ProjectEuler.0002\ProjectEuler.0002.csproj", "{B111CAE5-3FB5-4B08-90A7-F729C4C10193}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.0002.Tests", "ProjectEuler.0002.Tests\ProjectEuler.0002.Tests.csproj", "{00135E96-EACD-4A22-A6D6-5DFEC75AAEF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{22DB4224-4836-480F-ADAE-6697B7F85D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22DB4224-4836-480F-ADAE-6697B7F85D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22DB4224-4836-480F-ADAE-6697B7F85D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B111CAE5-3FB5-4B08-90A7-F729C4C10193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B111CAE5-3FB5-4B08-90A7-F729C4C10193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B111CAE5-3FB5-4B08-90A7-F729C4C10193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B111CAE5-3FB5-4B08-90A7-F729C4C10193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00135E96-EACD-4A22-A6D6-5DFEC75AAEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00135E96-EACD-4A22-A6D6-5DFEC75AAEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00135E96-EACD-4A22-A6D6-5DFEC75AAEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00135E96-EACD-4A22-A6D6-5DFEC75AAEF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

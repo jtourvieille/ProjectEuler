@@ -65,12 +65,11 @@ namespace ProjectEuler._0001.Tests.Scenarios
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Global rule")]
-        [NUnit.Framework.TestCaseAttribute("3", "5", "10", "23", null)]
-        [NUnit.Framework.TestCaseAttribute("3", "5", "1000", "233168", null)]
-        public virtual void GlobalRule(string multiple1, string multiple2, string upperBound, string multiplesSum, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("Multiple below an upper bound")]
+        [NUnit.Framework.TestCaseAttribute("3", "5", "10", "3;5;6;9", null)]
+        public virtual void MultipleBelowAnUpperBound(string multiple1, string multiple2, string upperBound, string computedMultiples, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Global rule", exampleTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiple below an upper bound", exampleTags);
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
@@ -78,29 +77,30 @@ this.ScenarioSetup(scenarioInfo);
 #line 8
  testRunner.And(string.Format("an upper bound of {0}", upperBound), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
- testRunner.When("I compute the sum of all the multiples", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I list the multiples", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
- testRunner.Then(string.Format("the sum is {0}", multiplesSum), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("the multiples are {0}", computedMultiples), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Multiple below an upper bound")]
-        [NUnit.Framework.TestCaseAttribute("3", "5", "10", "3;5;6;9", null)]
-        public virtual void MultipleBelowAnUpperBound(string multiple1, string multiple2, string upperBound, string computedMultiples, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("Global rule")]
+        [NUnit.Framework.TestCaseAttribute("3", "5", "10", "23", null)]
+        [NUnit.Framework.TestCaseAttribute("3", "5", "1000", "233168", null)]
+        public virtual void GlobalRule(string multiple1, string multiple2, string upperBound, string multiplesSum, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiple below an upper bound", exampleTags);
-#line 17
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Global rule", exampleTags);
+#line 16
 this.ScenarioSetup(scenarioInfo);
-#line 18
+#line 17
  testRunner.Given(string.Format("the multiples {0} and {1}", multiple1, multiple2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 19
+#line 18
  testRunner.And(string.Format("an upper bound of {0}", upperBound), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 19
+ testRunner.When("I compute the sum of all the multiples", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 20
- testRunner.When("I list the multiples", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 21
- testRunner.Then(string.Format("the multiples are {0}", computedMultiples), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("the sum is {0}", multiplesSum), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

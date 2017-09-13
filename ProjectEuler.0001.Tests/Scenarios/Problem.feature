@@ -3,6 +3,16 @@
     As a math problem solver
     I want to be told of the sum
 
+Scenario Outline: Multiple below an upper bound
+	Given the multiples <multiple1> and <multiple2>
+	And an upper bound of <upperBound>
+	When I list the multiples
+	Then the multiples are <computedMultiples>
+
+	Examples:
+	| multiple1 | multiple2 | upperBound | computedMultiples |
+	| 3         | 5         | 10         | 3;5;6;9           |
+
 Scenario Outline: Global rule
 	Given the multiples <multiple1> and <multiple2>
 	And an upper bound of <upperBound>
@@ -13,13 +23,3 @@ Scenario Outline: Global rule
 	| multiple1 | multiple2 | upperBound | multiplesSum |
 	| 3         | 5         | 10         | 23           |
 	| 3         | 5         | 1000       | 233168       |
-
-Scenario Outline: Multiple below an upper bound
-	Given the multiples <multiple1> and <multiple2>
-	And an upper bound of <upperBound>
-	When I list the multiples
-	Then the multiples are <computedMultiples>
-
-	Examples:
-	| multiple1 | multiple2 | upperBound | computedMultiples |
-	| 3         | 5         | 10         | 3;5;6;9           |
